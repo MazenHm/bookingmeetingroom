@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: #030046;
+  padding: 0 6rem;
+}
+.navbar h1 {
+  font-size: 28px;
+  color: white;
+  margin: 0;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding-left: 30px;
+}
