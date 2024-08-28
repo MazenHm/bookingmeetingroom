@@ -3,6 +3,7 @@
 body {
   font-family: poppins;
   background-color: #f7f9fc;
+  height: 100vh;
 }
 
 * {

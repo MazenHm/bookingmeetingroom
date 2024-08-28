@@ -10,12 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.signup form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  margin: 0 33%;
 }
 .signup__container h1 {
   margin: 55px 0;
@@ -24,23 +19,58 @@
 }
 .signup__container input,
 button {
-  width: fit-content;
   background-color: transparent;
   border: 1px solid #9fa3c9;
   padding: 15px 21px;
-  width: 27rem;
+  width: 31rem;
+  box-sizing: border-box;
 }
+.d-flex {
+  width: 100%;
+  position: relative;
+}
+.d-flex input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.signup__container .fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  right: 15px;
+  top: 29%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #9fa3c9;
+}
+.signup form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .input-pass {
   margin-bottom: 50px;
 }
 .signup__container button {
   color: white;
   background-color: #575ef5;
+  width: 100%;
 }
 
-.signup__container i {
-  position: absolute;
-  left: 58rem;
-  top: 442px;
-  color: #9fa3c9;
+@media (max-width: 768px) {
+  .signup__container input,
+  button {
+    width: 20rem;
+  }
+  .d-flex input {
+    padding-right: 40px;
+  }
+  .fa-eye,
+  .fa-eye-slash {
+    right: 10px;
+  }
+  .form-signup {
+    margin: 5%;
+  }
 }

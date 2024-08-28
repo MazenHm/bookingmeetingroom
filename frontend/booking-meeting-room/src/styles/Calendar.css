@@ -1,0 +1,96 @@
+.booking-container-calendar {
+  padding: 20px;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+.booking-container-calendar h2 {
+  color: #030046;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.day-month-time-container {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.day-selector,
+.month-selector,
+.time-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.selector-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+}
+
+.selector-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day,
+.time {
+  cursor: pointer;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #9fa3c9;
+  text-align: center;
+  color: #030046;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 50px;
+  font-size: 15px;
+}
+.month {
+  cursor: pointer;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid #9fa3c9;
+  text-align: center;
+  color: #030046;
+  font-weight: 700;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 50px;
+  font-size: 13px;
+  margin: 0;
+}
+.time {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.month-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.day.selected,
+.month.selected,
+.time.selected {
+  background-color: #030046;
+  color: white;
+  border-color: #030046;
+}
+
+.confirm-button {
+  background-color: #6f76f5;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+}

@@ -1,0 +1,82 @@
+.edit-container {
+  display: flex;
+}
+.content {
+  padding: 5rem 7rem;
+  display: flex;
+  flex-direction: column;
+}
+.content h1 {
+  color: #030046;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0 0 2rem 0;
+}
+.content form {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.content-form {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: left !important;
+}
+
+.content input,
+button {
+  background-color: transparent;
+  border: 1px solid #9fa3c9;
+  padding: 15px 21px;
+  width: 31rem;
+  box-sizing: border-box;
+}
+.d-flex {
+  width: 100%;
+  position: relative;
+}
+.d-flex input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.content .fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  right: 15px;
+  top: 29%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #9fa3c9;
+}
+.signup form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-pass {
+  margin-bottom: 50px;
+}
+.content button {
+  color: white;
+  background-color: #575ef5;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .content input,
+  button {
+    width: 20rem;
+  }
+  .d-flex input {
+    padding-right: 40px;
+  }
+  .fa-eye,
+  .fa-eye-slash {
+    right: 10px;
+  }
+  .form-signup {
+    margin: 5%;
+  }
+}

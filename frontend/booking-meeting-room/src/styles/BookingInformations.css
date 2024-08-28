@@ -1,0 +1,49 @@
+.information-container {
+  display: flex;
+  flex-direction: column;
+  margin: 55px 0;
+  margin-left: 15%;
+}
+.information-container h4 {
+  color: #030046;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+.information-container i {
+  color: #030046;
+}
+
+.information-box {
+  max-width: 37rem;
+  background-color: white;
+  border: 1px solid #9fa3c9;
+  padding: 30px 30px;
+}
+.information-box h5 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.information-box p {
+  font-weight: 500;
+  color: #030046;
+}
+.information-box h6 {
+  color: #9fa3c9;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .information-container{
+    margin: 15% 5%;
+  }
+  .information-container h4 {
+    font-size: 25px;
+  }
+  .information-box h5 {
+    font-size: 25px;
+  }
+  .information-box {
+    max-width: 22rem;
+  }
+}

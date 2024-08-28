@@ -1,6 +1,7 @@
 .signin {
   background-color: #f7f9fc;
 }
+
 .signin__container {
   margin: 35px 0;
   background-color: #f7f9fc;
@@ -10,33 +11,71 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 33%;
 }
 
-.signin form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .signin__container h1 {
   margin: 55px 0;
   color: #030046;
   font-weight: 600;
 }
+
 .signin__container input,
 button {
-  width: fit-content;
   background-color: transparent;
   border: 1px solid #9fa3c9;
   padding: 15px 21px;
-  width: 27rem;
+  width: 31rem;
+  box-sizing: border-box;
 }
 
+.d-flex {
+  position: relative;
+  width: 100%;
+}
+
+.d-flex input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.signin__container .fa-eye,
+.fa-eye-slash {
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #9fa3c9;
+}
 .signin__container button {
   color: white;
   background-color: #575ef5;
+  width: 100%;
 }
+
 .signin__container a {
   color: black;
   font-weight: 600;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .signin__container input,
+  button {
+    width: 20rem;
+  }
+
+  .d-flex input {
+    padding-right: 40px;
+  }
+
+  .fa-eye,
+  .fa-eye-slash {
+    right: 10px;
+  }
+  .form-signin {
+    margin: 5%;
+  }
 }

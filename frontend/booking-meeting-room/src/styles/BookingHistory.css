@@ -1,0 +1,95 @@
+.history-container {
+  display: flex;
+}
+
+.booking-history {
+  flex-grow: 1;
+  padding: 60px 100px;
+}
+.booking-history h1 {
+  color: #030046;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+.booking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar {
+  margin: 20px 0;
+  background-color: white;
+  padding: 7px;
+  height: 4rem;
+  position: relative;
+  display: flex;
+}
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9fa3c9;
+}
+.search-bar i {
+  color: #9fa3c9;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+  font-size: large;
+}
+.new-booking-button {
+  display: flex;
+  align-items: center;
+}
+.new-booking-button i {
+  margin-right: 0.5rem;
+}
+.add-booking-btn {
+  color: white;
+  background-color: #575ef5;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #9fa3c9;
+  background-color: transparent;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.booking-table th {
+  background-color: transparent;
+  color: #9fa3c9;
+  font-weight: 600;
+  text-align: center;
+}
+
+.booking-table td {
+  background-color: #fff;
+  color: #030046;
+  font-weight: 700;
+  text-align: center;
+}
+
+.booking-table tr:hover {
+  background-color: #f1f1f1;
+}
+.booking-table tr:nth-child(odd) td {
+  background-color: transparent;
+}
+
+.booking-table tr:nth-child(even) td {
+  background-color: white;
+}
