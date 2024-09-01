@@ -10,7 +10,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1>BRAND</h1>
+        <img
+          src="/assets/images/Logo-Proxym-2020.png"
+          alt="proxym"
+          className="logo"
+        />
       <div className={`nav-links ${isOpen ? "open" : ""}`}>
         <a href="#a">What’s happening</a>
         <a href="#a">Web Community</a>

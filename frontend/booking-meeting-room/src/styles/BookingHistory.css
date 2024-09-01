@@ -93,3 +93,24 @@
 .booking-table tr:nth-child(even) td {
   background-color: white;
 }
+.room-modal-title {
+  color: #030046;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-form select,button,input {
+  background-color: transparent;
+  border: 1px solid #9fa3c9;
+  padding: 15px 21px;
+  width: 31rem;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+.booking-table i{
+cursor: pointer;
+}

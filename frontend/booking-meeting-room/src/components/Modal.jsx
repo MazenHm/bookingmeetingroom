@@ -8,7 +8,7 @@ function Modal({ isOpen, onClose, children }) {
     <div className="modal-overlay">
       <div className="modal-content">
         <button className="modal-close" onClick={onClose}>
-          &times;
+          <i class="fas fa-times"></i>
         </button>
         {children}
       </div>

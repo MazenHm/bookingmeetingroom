@@ -6,7 +6,10 @@
   background-color: #030046;
   padding: 0 6rem;
 }
-
+.logo {
+  height: 45px;
+  cursor: pointer;
+}
 .navbar h1 {
   font-size: 28px;
   color: white;
@@ -50,7 +53,7 @@
   }
 
   .nav-links.open {
-    max-height: 300px; 
+    max-height: 300px;
   }
 
   .nav-links a {

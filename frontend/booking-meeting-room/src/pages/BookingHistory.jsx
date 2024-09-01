@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/BookingHistory.css";
+import { Link } from "react-router-dom";
 import SideBar from "../components/SideBar";
 
 const BookingHistory = () => {
@@ -10,9 +11,11 @@ const BookingHistory = () => {
         <div className="booking-header">
           <h1>Bookings</h1>
           <div className="new-booking-button">
-            <button className="add-booking-btn">
-              <i className="fas fa-plus"></i> New Booking
-            </button>
+            <Link to="/booking">
+              <button className="add-booking-btn">
+                <i className="fas fa-plus"></i> New Booking
+              </button>
+            </Link>
           </div>
         </div>
         <div className="search-bar">
@@ -51,7 +54,7 @@ const BookingHistory = () => {
                 <i className="fas fa-trash"></i>
               </td>
             </tr>
-             <tr>
+            <tr>
               <td>01</td>
               <td>Room A</td>
               <td>20</td>

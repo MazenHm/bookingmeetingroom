@@ -1,17 +1,16 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import BookingInformations from "./pages/BookingInformations";
 import BookingMettingRoom from "./pages/BookingMettingRoom";
 import SignInAdmin from "./pages/SignInAdmin";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import EditProfile from "./pages/EditProfile";
 import EditAdmin from "./pages/EditAdmin";
 import BookingHistory from "./pages/BookingHistory";
 import RoomManagement from "./pages/RoomManagement";
 import Calendar from "./pages/Calendar";
-
 
 function App() {
   return (

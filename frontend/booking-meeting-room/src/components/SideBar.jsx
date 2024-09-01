@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/SideBar.css";
 
 const SideBar = () => {
-  const [activeItem, setActiveItem] = useState("profile");
+  const [activeItem, setActiveItem] = useState("");
 
+ 
   const handleClick = (item) => {
     setActiveItem(item);
   };
@@ -12,32 +14,40 @@ const SideBar = () => {
     <div className="sidebar">
       <div className="sidebar-items">
         <div>
-          <p
-            onClick={() => handleClick("profile")}
-            className={activeItem === "profile" ? "active" : ""}
-          >
-            My Profile
-          </p>
-          <p
-            onClick={() => handleClick("booking")}
-            className={activeItem === "booking" ? "active" : ""}
-          >
-            New Booking
-          </p>
-          <p
-            onClick={() => handleClick("history")}
-            className={activeItem === "history" ? "active" : ""}
-          >
-            Booking History
-          </p>
+          <Link to="/edituser">
+            <p
+              onClick={() => handleClick("profile")}
+              className={activeItem === "profile" ? "active" : ""}
+            >
+              My Profile
+            </p>
+          </Link>
+          <Link to="/booking">
+            <p
+              onClick={() => handleClick("booking")}
+              className={activeItem === "booking" ? "active" : ""}
+            >
+              New Booking
+            </p>
+          </Link>
+          <Link to="/bookinghistory">
+            <p
+              onClick={() => handleClick("history")}
+              className={activeItem === "history" ? "active" : ""}
+            >
+              Booking History
+            </p>
+          </Link>
         </div>
         <div>
-          <p
-            onClick={() => handleClick("logout")}
-            className={activeItem === "logout" ? "active" : ""}
-          >
-            Log Out
-          </p>
+          <Link to="/">
+            <p
+              onClick={() => handleClick("logout")}
+              className={activeItem === "logout" ? "active" : ""}
+            >
+              Log Out
+            </p>
+          </Link>
         </div>
       </div>
     </div>

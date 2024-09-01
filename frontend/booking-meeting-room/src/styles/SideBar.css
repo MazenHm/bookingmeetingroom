@@ -19,6 +19,12 @@
   padding: 10px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  font-style: none;
+}
+.sidebar-items a {
+ 
+  text-decoration: none;
 }
 
 .sidebar-items p:hover {

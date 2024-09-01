@@ -1,0 +1,19 @@
+.react-confirm-alert-body {
+  font-family: "Poppins";
+  width: 480px;
+  padding: 60px;
+  text-align: center;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+  color: #030046;
+}
+
+.react-confirm-alert-body h1 {
+  font-weight: 600;
+}
+.react-confirm-alert-button-group > button {
+  background-color: #575ef5;
+  color: white;
+  border-radius: 0;
+}
