@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api";
+const API_URL = "https://bookingmeetingroom.onrender.com/api/rooms";
 
 const getAuthHeader = () => {
   const token = localStorage.getItem("token");
