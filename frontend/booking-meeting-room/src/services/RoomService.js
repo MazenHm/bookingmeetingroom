@@ -1,50 +1,50 @@
-import { Api } from "./config";
+import axios from "axios";
 
-export const getAllRooms = async () => {
-  let response = await Api.get("/getAllRooms");
+const API_URL = "http://localhost:8080/api";
 
-  if (response.data) {
-    return response.data;
-  }
-  return null;
+const getAuthHeader = () => {
+  const token = localStorage.getItem("token");
+  return {
+    headers: { Authorization: `Bearer ${token}` }
+  };
 };
 
-export const addRoom = async (payload) => {
-  const response = {
-    data: null,
-    err: null,
-  };
-  await Api.post("/addRoom", payload)
-    .then((res) => {
-      response.data = res;
-    })
-    .catch((err) => {
-      response.err = err;
-    });
+export const getAllRooms = async () => {
+  try {
+    const res = await axios.get(`${API_URL}/getAllRooms`, getAuthHeader());
+    return res.data;
+  } catch (err) {
+    console.error("Error fetching rooms:", err);
+    return [];
+  }
+};
 
-  return response;
+export const addRoom = async (room) => {
+  try {
+    const res = await axios.post(`${API_URL}/addRoom`, room, getAuthHeader());
+    return res.data;
+  } catch (err) {
+    console.error("Error adding room:", err);
+    return { err };
+  }
 };
 
 export const deleteRoom = async (id) => {
-  let response = await Api.delete(`/deleteRoom/${id}`);
-
-  if (response.data) {
-    return response.data;
-  }
-  return null;
-};
-export const updateRoom = async (id, payload) => {
-  const response = {
-    data: null,
-    err: null,
-  };
-
   try {
-    const res = await Api.put(`/updateRoom/${id}`, payload);
-    response.data = res.data;
+    const res = await axios.delete(`${API_URL}/deleteRoom/${id}`, getAuthHeader());
+    return res.data;
   } catch (err) {
-    response.err = err.response ? err.response.data : err.message;
+    console.error("Error deleting room:", err);
+    return null;
   }
+};
 
-  return response;
+export const updateRoom = async (id, room) => {
+  try {
+    const res = await axios.put(`${API_URL}/updateRoom/${id}`, room, getAuthHeader());
+    return res.data;
+  } catch (err) {
+    console.error("Error updating room:", err);
+    return { err };
+  }
 };
